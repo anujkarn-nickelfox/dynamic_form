@@ -12,7 +12,7 @@ const Login = () => {
       token: "djkhfkdhfdhfs",
       user: { name: "Test", email: "test@gmail.com" }
     });
-    history.push("/u/dashboard");
+    history.push("/u/forms");
   };
 
   return (
