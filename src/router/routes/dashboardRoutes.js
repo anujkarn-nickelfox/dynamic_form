@@ -17,5 +17,4 @@ export const DashboardMenus = [
   new MenuPath("Dahboard", <HomeIcon />, "/u/dashboard"),
   new MenuPath("Forms", <FormsIcon />, "/u/forms"),
   new MenuPath("Settings", <SettingsIcon />, "/u/settings"),
-  new MenuPath("Orders", <SettingsIcon />, "/u/orders")
 ];
