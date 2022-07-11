@@ -1,0 +1,60 @@
+.main_heading {
+  vertical-align: top;
+  color: #383838;
+}
+.sub_heading {
+  vertical-align: top;
+  margin-top: 0.5rem !important;
+  color: #383838;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  padding-bottom: 2rem;
+}
+.dynamic_form_container {
+  // display: flex;
+  // flex-direction: column;
+  // max-width: 40rem;
+}
+.textField_container {
+  margin-top: 1.5rem;
+}
+.text_error {
+  height: 2.5rem;
+  width: 460px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.inputlabel {
+  font-weight: 500 !important;
+  font-style: normal;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  text-align: left;
+  // margin-top: 1.5rem !important;
+  vertical-align: top;
+  color: #383838;
+}
+
+.inputfield {
+  max-width: 40rem;
+  margin-top: 1rem;
+  outline: none;
+  margin-bottom: 6px;
+  background-color: white;
+}
+
+.text_danger {
+  color: #d9001d;
+}
+.submit_container {
+  margin-top: 1.5rem;
+}
+.submit_button {
+  height: 52px;
+  text-align: center;
+}
