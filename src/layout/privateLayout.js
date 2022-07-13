@@ -17,6 +17,8 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { DashboardMenus } from "router/routes/dashboardRoutes";
 import { useHistory } from "react-router-dom";
+import LogoutIcon from "@mui/icons-material/ExitToApp";
+import AppDispatcher from "redux/dispatchers/appDispatcher";
 
 const drawerWidth = 240;
 
@@ -132,6 +134,17 @@ export default function PrivateLayout({ children }) {
               <ListItemText primary={item.title} />
             </ListItem>
           ))}
+          <ListItem
+            button
+            key={"logout"}
+            onClick={() => {
+              AppDispatcher.setUserLoggedOut();
+            }}>
+            <ListItemIcon>
+              <LogoutIcon />
+            </ListItemIcon>
+            <ListItemText primary={"Logout"} />
+          </ListItem>
         </List>
       </Drawer>
       <Main open={open}>
