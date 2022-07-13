@@ -27,7 +27,7 @@ const FormTextField = ({ fullWidth, label, name, value, ...props }) => {
       <Field
         id={name}
         as={as}
-        placeholder="Type here"
+        placeholder={props.placeholder || "Type here"}
         fullWidth={fullWidth}
         sx={styles.inputfield}
         value={value}
@@ -58,7 +58,7 @@ const FormDropdownField = ({
       <Field
         id={name}
         as={as}
-        placeholder="Type here"
+        placeholder={props.placeholder || "Type here"}
         fullWidth={fullWidth}
         sx={styles.inputfield}
         value={value || "none"}
